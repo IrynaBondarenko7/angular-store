@@ -10,7 +10,10 @@ import { ButtonComponent } from '../../../components/button/button.component';
     <li
       class="bg-white shadow-md border rounded-xl p-6 flex gap-4 items-center"
     >
-      <img [src]="cartItem().image" class="w-[50px] h-[50px] object-contain" />
+      <img
+        [src]="cartItem().images[0]"
+        class="w-[50px] h-[50px] object-contain"
+      />
       <div class="flex flex-col">
         <span class="text-md font-bold">{{ cartItem().title }}</span>
         <span class="text-sm">{{ '$' + cartItem().price }}</span>

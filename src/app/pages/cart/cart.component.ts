@@ -7,7 +7,7 @@ import { OrderSummaryComponent } from './order-summary/order-summary.component';
   selector: 'app-cart',
   imports: [CartItemComponent, OrderSummaryComponent],
   template: `
-    <h2 class="text-2xl">Shopping Cart</h2>
+    <h2 class=" px-6 text-2xl mt-4">Shopping Cart</h2>
     <ul class="p-6 flex flex-col gap-4">
       @for (cartItem of cartService.cart(); track cartItem.id) {
       <app-cart-item [cartItem]="cartItem" />

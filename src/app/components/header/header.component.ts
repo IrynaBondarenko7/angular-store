@@ -10,7 +10,7 @@ import { RouterLink } from '@angular/router';
     <header
       class="ng-slate-100 px-4 py-3 shadow-md flex justify-between items-center"
     >
-      <button class="text-xl" routerLink="/">Store</button>
+      <button class="text-xl" routerLink="/">AStore</button>
       <app-primary-button
         [label]="'Cart (' + cartService.cart().length + ')'"
         routerLink="/cart"

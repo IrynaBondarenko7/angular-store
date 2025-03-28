@@ -12,7 +12,7 @@ import { CartService } from '../../../services/cart.service';
     >
       <div class="mx-auto">
         <img
-          [src]="product().image"
+          [src]="product().images[0]"
           alt="product image"
           class="w-[200px] h-[100px] object-contain"
         />
